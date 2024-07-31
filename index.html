@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Simple Website</h1>
+        <p>This is a basic HTML page with some inline CSS styling.</p>
+        <!-- Chatbot will be added here -->
+        <div id="hubspot-chatbot"></div>
+    </div>
+    <script src="https://js.hubspot.com/loader.js"></script>
+    <script>
+        hbspt.forms.create({
+            portalId: "YOUR_HUBSPOT_PORTAL_ID",
+            formId: "YOUR_HUBSPOT_FORM_ID",
+            target: "#hubspot-chatbot"
+        });
+    </script>
+</body>
+</html>
+
