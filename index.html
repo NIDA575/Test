@@ -62,7 +62,17 @@
         <!-- Chatbot will be added here -->
         <div id="hubspot-chatbot"></div>
     </div>
+    
+    
+    
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/46937566.js"></script>
+    <script>
+        // Clear HubSpot chat widget session
+        localStorage.removeItem('messages');
+        localStorage.removeItem('lastInteraction');
+        sessionStorage.removeItem('messages');
+        sessionStorage.removeItem('lastInteraction');
+    </script>
 </body>
 </html>
 
